@@ -5,6 +5,7 @@
         <div style="display: flex;">
             <Column v-for="column in row.columns" v-bind:key="column.id" v-bind:column="column"></Column>
         </div>
+        <button @click="deleteRow">del</button>
     </div>
 </template>
 
@@ -16,5 +17,10 @@ export default {
     components: {
         Column
     },
+    methods: {
+        deleteRow() {
+            this.$emit('deleteRowIntent', this.row);
+        }
+    }
 }
 </script>
