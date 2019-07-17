@@ -5,6 +5,7 @@
                 element view
                 {{ element.id }}
                 <button v-on:click="editElement">edit</button>
+                <button v-on:click="delElement">del</button>
             </div>
         </div>
         <div v-if="!element">empty column</div>
@@ -21,6 +22,9 @@ export default {
     methods: {
         editElement() {
             dispatcher.emit('editElementIntent', this.element);
+        },
+        delElement() {
+            this.$emit('elementDelIntent', this.element);
         }
     }
 }
