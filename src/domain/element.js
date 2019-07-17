@@ -4,6 +4,11 @@ class Element {
         this.id = attrs.id;
         this.color = attrs.color;
     }
+
+    save() {
+        console.log('saving ajax');
+        //ajax here
+    }
 }
 
 export {

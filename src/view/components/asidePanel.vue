@@ -1,5 +1,5 @@
 <template>
-    <div style="border:solid 3px;">
+    <div style="border:solid 3px; width:20%">
         aside panel
         <div v-if="currentElement">
             <div>id: {{ currentElement.id }}</div>
@@ -34,6 +34,7 @@ export default {
         },
         applyEditing() {
             this.currentElement.color = this.currentColor;
+            this.currentElement.save();
         }
     }
     

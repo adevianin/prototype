@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="width:80%">
         page view
         {{ page.id }}
         <Block v-for="block in page.blocks" :key="block.id" :block="block"></Block>

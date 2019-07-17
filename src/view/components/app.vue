@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div style="display: flex">
         <AsidePanel></AsidePanel>
         <Page v-bind:page="page"></Page>
     </div>
