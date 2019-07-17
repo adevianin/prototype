@@ -1,5 +1,5 @@
 <template>
-    <div style="border:solid 3px; width:20%">
+    <div style="border:solid 3px;min-height:300px;">
         aside panel
         <div v-if="currentElement">
             <div>id: {{ currentElement.id }}</div>
