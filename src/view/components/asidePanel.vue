@@ -1,6 +1,6 @@
 <template>
     <div style="border:solid 3px;min-height:300px;">
-        aside panel
+        <h3>aside panel</h3>
         <div v-if="currentElement">
             <div>id: {{ currentElement.id }}</div>
             <div>color: <input v-model="currentColor"> </div>

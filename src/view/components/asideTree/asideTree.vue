@@ -1,6 +1,6 @@
 <template>
     <div style="border: solid 3px;">
-        page
+        <h3>aside tree</h3>
         <Block v-for="block in page.blocks" :key="block.id" :block="block"></Block>
     </div>
 </template>
