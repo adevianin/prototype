@@ -6,7 +6,7 @@ class Element {
     }
 
     save() {
-        console.log('saving ajax');
+        console.log('saving ajax', {id: this.id, color: this.color});
         //ajax here
     }
 }
