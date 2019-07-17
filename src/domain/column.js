@@ -2,6 +2,7 @@ class Column {
     constructor(columnJson) {
         this.id = columnJson.id;
         this.element = columnJson.element;
+        this.type = 'column';
     }
 
     deleteElement() {
